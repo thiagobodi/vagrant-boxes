@@ -1,0 +1,18 @@
+RESPONSEFILE_VERSION = "11.2.0"
+OPERATION_TYPE = "createDatabase"
+[CREATEDATABASE]
+GDBNAME = ###ORACLE_SID###
+SID = ###ORACLE_SID###
+TEMPLATENAME = "General_Purpose.dbc"
+SYSPASSWORD =  ###ORACLE_PWD### 
+SYSTEMPASSWORD = ###ORACLE_PWD###
+DBSNMPPASSWORD = ###ORACLE_PWD###
+characterSet=###ORACLE_CHARACTERSET###
+NATIONALCHARACTERSET= AL32UTF8
+#LISTENERS = "listener1 listener2"
+#SAMPLESCHEMA=TRUE
+#DATABASETYPE = "MULTIPURPOSE"
+AUTOMATICMEMORYMANAGEMENT = FALSE
+TOTALMEMORY = 950
+#SYSDBAUSERNAME = "system"
+initParams=audit_trail=none,audit_sys_operations=false,filesystemio_options=setall,commit_logging=batch,commit_wait=nowait
